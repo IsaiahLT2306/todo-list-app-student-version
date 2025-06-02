@@ -1,5 +1,4 @@
 const db = require("../db");
-ghjk
 //Add a comment describing what this function does and what does it return
 const getTasks = async () => {
   const res = await db.query(
