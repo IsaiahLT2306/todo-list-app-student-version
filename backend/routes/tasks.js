@@ -4,16 +4,18 @@ const router = express.Router();
 const taskModel = require("../models/taskModel");
 
 //Write a comment describing the purpose of this route
+//This code is to retrieve and return all tasks from the database
 router.get("/", async (req, res) => {
   const tasks = await taskModel.getTasks();
   res.json(tasks);
 });
 
 // Write a comment describing the purpose of this route
+//This code is to create a new task with data provided in the request body
 router.post("/", async (req, res) => {
   //there is a bug in line 15 you need to fix
   const { name, description } = req.body;
-  const task = await taskModel.addTask(title, description);
+  const task = await taskModel.addTask(name, description);
   res.status(201).json(task);
 });
 
