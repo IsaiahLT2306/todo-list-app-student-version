@@ -1,7 +1,21 @@
 body {
-  font-family: sans-serif;
-  background: #f5f5f5;
+  font-family: cursive;
+  background: #80ff33;
   padding: 20px;
+}
+
+.my-button {
+  background-color: green;   
+  color: white;             
+  border: none;             
+  padding: 10px 20px;       
+  font-size: 16px;         
+  border-radius: 5px;      
+  cursor: pointer;          
+}
+
+.my-button:hover {
+  background-color: darkblue; /* Changes color when hovered */
 }
 
 .container {
